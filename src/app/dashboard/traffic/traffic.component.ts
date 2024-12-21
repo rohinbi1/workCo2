@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-traffic',
+  templateUrl: './traffic.component.html',
+  styleUrls: ['./traffic.component.scss']
 })
-export class AppComponent {
+export class TrafficComponent {
   dummyTrafficData = [
     {
       id: 'd1',
@@ -36,6 +36,4 @@ export class AppComponent {
       value: 589,
     },
   ];
-  maxTraffic = Math.max(...this.dummyTrafficData.map((data) => data.value));
-  currentStatus = 'online';
 }
